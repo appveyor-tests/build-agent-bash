@@ -4,6 +4,7 @@ init:
 - sh: echo $APPVEYOR_BUILD_WORKER_IMAGE
 
 test_script:
+- sh: rvm use 2.3
 - sh: exit 2
 
 build: off
