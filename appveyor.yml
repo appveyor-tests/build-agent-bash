@@ -1,0 +1,4 @@
+test_script:
+- sh: exit 2
+
+build: off
