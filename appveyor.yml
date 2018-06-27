@@ -8,6 +8,10 @@ init:
 
 test_script:
 - ps
+- sh: |
+    shopt -q login_shell && echo Login shell || echo Not login shell
+- sh: |
+    [[ $- == *i* ]] && echo Interactive || echo Not interactive
 - sh: rvm use 2.3
 - sh: command -v ruby
 - sh: ruby --version
