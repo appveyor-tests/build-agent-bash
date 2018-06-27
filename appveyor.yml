@@ -11,8 +11,7 @@ test_script:
     shopt -q login_shell && echo Login shell || echo Not login shell
 - sh: |
     [[ $- == *i* ]] && echo Interactive || echo Not interactive
-- sh: command -v rvm
-- sh: if command -v rvm; then rvm use 2.3; fi
+- sh: if command -v rvm; then rvm use 2.3; else echo "rvm not loaded"; fi
 - sh: command -v ruby
 - sh: ruby --version
 - sh: |
