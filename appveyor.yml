@@ -9,6 +9,8 @@ init:
 test_script:
 - ps
 - sh: rvm use 2.3
+- sh: command -v ruby
+- sh: ruby --version
 - sh: |
     #rm $DIR/exit
     #kill $MONITOR_PID
