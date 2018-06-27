@@ -1,4 +1,5 @@
 init:
+- source $HOME/.rvm/bin/rvm
 - echo $DIR
 - echo $MONITOR_PID
 - appveyor version
