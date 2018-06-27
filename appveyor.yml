@@ -9,8 +9,8 @@ test_script:
 - ps
 - sh: rvm use 2.3
 - sh: |
-    rm $DIR/exit
-    kill $MONITOR_PID
+    #rm $DIR/exit
+    #kill $MONITOR_PID
     exit 2
 
 build: off
