@@ -22,7 +22,6 @@ test_script:
     fi
     trap -p EXIT
     
-- sh: cat $DIR/cd
 - sh: |
     #trap terminate_process EXIT
     #rm $DIR/exit
