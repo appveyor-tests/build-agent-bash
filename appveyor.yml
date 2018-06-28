@@ -23,7 +23,7 @@ test_script:
     trap -p EXIT
 
 - sh: |
-    trap terminate_process EXIT
+    #trap terminate_process EXIT
     #rm $DIR/exit
     #kill $MONITOR_PID
     exit 2
