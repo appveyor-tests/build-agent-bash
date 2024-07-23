@@ -13,7 +13,7 @@ test_script:
     [[ $- == *i* ]] && echo Interactive || echo Not interactive
 - sh: |
     if command -v rvm; then 
-      rvm use 2.3;
+      rvm use 2.4;
       command -v ruby
       ruby --version
     else 
